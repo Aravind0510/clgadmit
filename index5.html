@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+ 
+</head>
+<body>
+  <h1>
+    Fill the form given below
+  </h1>
+  <div class="container">
+    <form action="{{url_for('predict5')}}"method="post">
+      <input type="text" name="10th Percent" placeholder="10th Percent" required><br><br>
+      <input type="text" name="12th Percent" placeholder="12th Percent" required><br><br>
+      <input type="text" name="Division" placeholder="Division (enter value  in integer)" required><br><br>
+      <input type="text" name="Coed" placeholder="Do you need coed (1/0)?" required><br><br>
+    
+      <button type="submit" class="btn">Predict</button>
+    </form>
+
+    <br>
+    <br>
+    {{ prediction_text }}
+  </div>
+</body>
+</html>
